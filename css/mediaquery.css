@@ -1,0 +1,240 @@
+/* Media Query Responsive For Wide Screens 1024px*/
+@media screen and (max-width: 1024px) {
+  .heading{
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .rating i, .review{
+    font-size: 16px;
+  }
+  .large-image {
+    width: 88%; 
+  }
+  .card{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 10px;
+    margin-top: 3rem;
+  }
+  .card-left img {
+    width: 180px;
+  }
+  .card-middle h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .stars {
+    margin-bottom: 20px;
+    font-size: 13px;
+  }
+  .details li {
+    font-size: 11px;
+    line-height: 1.5;
+    margin-bottom: 12px;
+  }
+  .info {
+    gap: 15px;
+  }
+  .info li {
+    font-size: 12px;
+  }
+  .activity-section {
+    width: 90%;
+    margin: 0 auto;
+    padding: 8px;
+  }
+  .activity-section h2 {
+    font-size: 20px;
+  }
+  /* Pricing Section */
+.pricing-section {
+  width: 90%;
+  margin: 0 auto;
+  padding: 8px;
+}
+.opinion-section{
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px;
+}
+.opinion-section h2{
+  font-size: 20px;
+}
+.opinion-section ul li{
+  font-size: 15px;
+}
+
+  }
+/* Media Query For Tablet Screens 768px*/
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 35px;
+    right: 0;
+    background-color: #034b61ae;
+    width: 100%;
+    height: max-content;
+    flex-direction: column;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+    z-index: 100;
+  }
+
+  .nav-links li {
+    margin: 15px 0;
+    border-right: none;
+  }
+
+  .logo img {
+    height: 30px;
+  }
+
+  
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 15px; 
+    right: 13px; 
+  }
+
+  
+  .icons {
+    display: flex;
+  }
+
+  /* Toggle functionality using checkbox */
+  #menu-toggle:checked + .hamburger .fa-bars {
+    display: none;
+  }
+
+  #menu-toggle:checked + .hamburger .fa-times {
+    display: block;
+  }
+
+  #menu-toggle:checked ~ .nav-links {
+    display: flex;
+    max-height: 500px;
+  }
+  .main{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .heading{
+    font-size: 22px;
+    font-weight: 500;
+  }
+  .rating i, .review{
+    font-size: 14px;
+  }
+  .images-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .large-image {
+    width: 93%; 
+    max-height: 100%; 
+    overflow: hidden;
+  }
+  .small-images {
+    width: 100%;
+    display: flex;
+  flex-direction: row;
+  }
+  .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-left img {
+    width: 300px;
+    object-fit: cover;
+  }
+  .card-middle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+  }
+  .card-right {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .info{
+    width: 35%;
+  }
+  .price-info{
+    width: 50%;
+  }
+  .price-info .availability-btn {
+    padding: 10px 20px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .sidebar-container{
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+/* Media Query Responsive For Mobile Screens 480px*/
+@media screen and (max-width: 480px) {
+  .nav-links {
+    top: 35px;
+    z-index: 100;
+    height: max-content;
+    background-color: #003e4ea4;
+  }
+
+  .hamburger {
+    right:10px;
+  }
+  .main{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .heading{
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .rating i, .review{
+    font-size: 14px;
+  }
+  .images-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+  
+  .small-images {
+    width: 100%;
+    display: flex;
+  flex-direction: row;
+  }
+  .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-left img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+  }
+  .card-middle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+  }
+  }
